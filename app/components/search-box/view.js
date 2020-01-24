@@ -29,7 +29,7 @@ const SearchBox = (props) => (
               <div className="forms">             
                 <div className="search__fields">
                   <div className="search__field search__field_zoom">
-                    <input type="text" className="forms__input search__input js-suggest-search-new" name="specialist" data-suggestclassName="autocomplete-suggestion-withgroup" data-autocomplete-id="autocomplete-spec" placeholder="Врач, клиника, болезнь, услуга" value="" tabindex="1" data-event-tracker="1" data-tracker-event="input" data-tracker-action="search" data-tracker-label="speciality" data-tracker-value="__current__value__" autocomplete="off" />
+                    <input type="text" className="forms__input search__input js-suggest-search-new" name="specialist" data-suggestclassName="autocomplete-suggestion-withgroup" data-autocomplete-id="autocomplete-spec" placeholder={Data.placeholderPlaceholder} value="" tabindex="1" data-event-tracker="1" data-tracker-event="input" data-tracker-action="search" data-tracker-label="speciality" data-tracker-value="__current__value__" autocomplete="off" />
                     <button className="search__button">
                       <i className="fa fa-search" /> 
                     </button>
@@ -41,7 +41,7 @@ const SearchBox = (props) => (
                     <div className="autocomplete-suggestions" style={{position: 'absolute'}, {display: 'none'}, {'max-height': '300px'}, {'z-index': '9999'}} />
                   </div>
                   <div className="search__field search__field_button">
-<button className="button button_search forms__button" type="submit">{Data.submit}</button>
+                    <button className="button button_search forms__button" type="submit">{Data.submit}</button>
                   </div>
                 </div>
               </div>
@@ -68,7 +68,8 @@ const SearchBox = (props) => (
                   <div className="suggested-features-showcase-circle suggested-features-showcase-circle-orange" />
                 </div>
                 <div>
-                  Пройти <a href="https://shop.docdoc.ru/catalog/kompleksnye-obsledovaniya/?utm_source=ddmain&amp;utm_medium=first_screen" target="_blank" data-category="checkup application">комплексное <br /> обследование</a>
+                  {Data.checkupApplicationName}
+                   <a href={Data.checkupApplicationLink} target="_blank" data-category="checkup application">{Data.checkupApplicationLabelOne} <br /> {Data.checkupApplicationLabelTow}</a>
                 </div>
               </li>
               <li>
@@ -76,7 +77,8 @@ const SearchBox = (props) => (
                   <div className="suggested-features-showcase-circle suggested-features-showcase-circle-blue" />
                 </div>
                 <div>
-                  Записаться <br /> <a href="https://diagnostica.docdoc.ru" target="_blank" data-category="diagnostics application">на диагностику</a>
+                  {Data.diagnosticsApplicationName}
+                   <br /> <a href={Data.diagnosticsApplicationLink} target="_blank" data-category="diagnostics application">{Data.diagnosticsApplicationLabel}</a>
                 </div>
               </li>
 	            <li>
@@ -84,8 +86,9 @@ const SearchBox = (props) => (
                   <div className="suggested-features-showcase-circle suggested-features-showcase-circle-violet" />
                 </div>
                 <div>
-	                Записаться <br /> 
-                  <a href="/dms" target="_blank" data-category="dms application">по полису ДМС</a>
+                  {Data.dmsApplicationName}
+	                <br /> 
+                  <a href={Data.dmsApplicationLink} target="_blank" data-category="dms application">{Data.dmsApplicationLabel}</a>
                 </div>
               </li>
 	            <li>
@@ -93,8 +96,8 @@ const SearchBox = (props) => (
                   <div className="suggested-features-showcase-circle suggested-features-showcase-circle-green" />
                 </div>
                 <div>
-                  Получить 
-                  <a href="https://shop.docdoc.ru/catalog/onlayn-konsultatsii/?utm_source=ddmain&amp;utm_medium=first_screen" target="_blank" data-category="telemedicine applicantion">онлайн- <br /> консультацию (телемедицина)</a>
+                  {Data.telemedicineApplicationName}
+                  <a href={Data.telemedicineApplicationLink} target="_blank" data-category="telemedicine applicantion">{Data.telemedicineApplicationLabelOne} <br /> {Data.telemedicineApplicationLabelTow}</a>
                 </div>
               </li>
 	            <li>
@@ -102,7 +105,8 @@ const SearchBox = (props) => (
                   <div className="suggested-features-showcase-circle suggested-features-showcase-circle-red" />
                 </div>
                 <div>
-                  Скачать <a href="#apps_anchor" data-category="mobile download">мобильное <br /> приложение</a>
+                 {Data.mobileDownloadName}
+                 <a href="#apps_anchor" data-category="mobile download">{Data.mobileDownloadLabelOne} <br /> {Data.mobileDownloadLabelTow}</a>
                 </div>
               </li>
 	          </ul>

@@ -6,6 +6,23 @@
   "recommendedTodayTitle": "Ещё на DocDoc можно",
   "doctorApplicationName": "Записаться",
   "doctorApplicationLable": "к врачу на приём",
-  "doctorApplicationLink": "/doctor"
-
+  "doctorApplicationLink": "/doctor",
+  "placeholderPlaceholder": "Врач, клиника, болезнь, услуга",
+  "checkupApplicationName": "Пройти",
+  "checkupApplicationLink": "https://shop.docdoc.ru/catalog/kompleksnye-obsledovaniya/?utm_source=ddmain&amp;utm_medium=first_screen",
+  "checkupApplicationLabelOne": "комплексное",
+  "checkupApplicationLabelTow": "обследование",
+  "diagnosticsApplicationName": "Записаться",
+  "diagnosticsApplicationLink": "https://diagnostica.docdoc.ru",
+  "diagnosticsApplicationLabel": "на диагностику",
+  "dmsApplicationName": "Записаться",
+  "dmsApplicationLink": "/dms",
+  "dmsApplicationLabel": "по полису ДМС",
+  "telemedicineApplicationName": "Получить",
+  "telemedicineApplicationLink": "https://shop.docdoc.ru/catalog/onlayn-konsultatsii/?utm_source=ddmain&amp;utm_medium=first_screen",
+  "telemedicineApplicationLabelOne": "онлайн-",
+  "telemedicineApplicationLabelTow": "консультацию (телемедицина)",
+  "mobileDownloadName": "Скачать",
+  "mobileDownloadLabelOne": "мобильное",
+  "mobileDownloadLabelTow": "приложение"
 }
