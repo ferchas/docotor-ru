@@ -40,7 +40,7 @@
     "express": "^4.17.1",
     "flatpickr": "^4.6.3",
     "fs": "0.0.1-security",
-    "jsdom": "^13.1.0",
+    "jsdom": "^16.5.0",
     "path": "^0.12.7",
     "react-daypicker": "^3.0.10",
     "react-js-pagination": "^3.0.2",
